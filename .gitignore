@@ -1,0 +1,13 @@
+# on gitignore tous les dossiers nommés "vendor"
+vendor
+# on précise qu'on gitignore le dossier wp A LA RACINE du projet 
+/wp
+/wp-config.php
+
+
+# on gitignore tous les plugins sauf le plugin spédcifique "oMotive"
+/wp-content/*
+!/wp-content/
+/wp-content/plugins/*
+!/wp-content/plugins
+!/wp-content/plugins/omotive
