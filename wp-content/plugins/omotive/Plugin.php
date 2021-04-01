@@ -133,8 +133,6 @@ class Plugin
         RouterResolution::delResolutionUser();
         RouterResolution::editResolutionUser();
         RouterTestimony::addTestimony();
-        RouterTestimony::getTestimonials();
-        
-        
+        RouterTestimony::getTestimonials(); 
     }
 }
