@@ -144,5 +144,6 @@ class Plugin
         RouterCustomResolution::getUserCustomArchivedResolutions();
         RouterCustomResolution::delCustomResolutionUser();
         RouterCustomResolution::editCustomResolutionUser();
+        
     }
 }
