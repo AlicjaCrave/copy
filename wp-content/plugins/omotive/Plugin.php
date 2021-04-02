@@ -137,12 +137,5 @@ class Plugin
         RouterResolution::delResolutionUser();
         RouterResolution::editResolutionUser();
         RouterTestimony::addTestimony();
-        RouterTestimony::getTestimonials();
-        RouterCustomResolution::addCustomResolutionUser();
-        RouterCustomResolution::addCustomResolutionUser();
-        RouterCustomResolution::getCustomUserResolutions();
-        RouterCustomResolution::getUserCustomArchivedResolutions();
-        RouterCustomResolution::delCustomResolutionUser();
-        RouterCustomResolution::editCustomResolutionUser();
     }
 }
