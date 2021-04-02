@@ -40,6 +40,15 @@ class UserRole {
                 'edit_others_resolutions'=> false,
                 'delete_others_resolutions'=> false,
 
+                //CPT custom resolutions
+                'edit_custom_resolutions'=> true,
+                'publish_custom_resolutions'=> false,
+                'edit_custom_resolution'=> false,
+                'read_custom_resolution'=> true,
+                'delete_custom_resolution'=> false,
+                'edit_others_custom_resolutions'=> false,
+                'delete_others_custom_resolutions'=> false,
+
                 //CPT rewards
                 'edit_rewards' => true,
                 'publish_rewards' => false,

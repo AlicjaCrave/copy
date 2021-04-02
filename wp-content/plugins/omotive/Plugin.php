@@ -4,14 +4,16 @@ namespace oMotive;
 
 use oMotive\PostType\TestimonyPostType;
 use oMotive\PostType\ResolutionPostType;
+use oMotive\PostType\CustomResolutionPostType;
+use oMotive\PostType\RewardPostType;
 use oMotive\Role\UserRole;
 use oMotive\Taxonomy\GradeTaxonomy;
 use oMotive\Classes\Database;
 use oMotive\Classes\RouterReward;
 use oMotive\Classes\RouterResolution;
+use oMotive\Classes\RouterCustomResolution;
 use oMotive\Classes\RouterUser;
 use oMotive\Classes\RouterTestimony;
-use oMotive\PostType\RewardPostType;
 
 use WP_REST_Request;
 
@@ -35,7 +37,6 @@ class Plugin
                 '/O-Motive/wp-json/omotive/v1/users/*',
                 '/O-Motive/wp-json/omotive/v1/testimonials',
                 '/O-Motive/wp-json/omotive/v1/testimonials/*',
-                
             );
         });
 
@@ -79,6 +80,7 @@ class Plugin
     {
         TestimonyPostType::register();
         ResolutionPostType::register();
+        CustomResolutionPostType::register();
         RewardPostType::register();
     }
 
@@ -93,6 +95,7 @@ class Plugin
     {
         TestimonyPostType::addAdminCaps();
         ResolutionPostType::addAdminCaps();
+        CustomResolutionPostType::addAdminCaps();
         RewardPostType::addAdminCaps();
         UserRole::add();
         GradeTaxonomy::addAdminCaps();
@@ -109,6 +112,7 @@ class Plugin
     {
         TestimonyPostType::removeAdminCaps();
         ResolutionPostType::removeAdminCaps();
+        CustomResolutionPostType::removeAdminCaps();
         RewardPostType::removeAdminCaps();
         UserRole::remove();
         GradeTaxonomy::removeAdminCaps();
@@ -134,7 +138,11 @@ class Plugin
         RouterResolution::editResolutionUser();
         RouterTestimony::addTestimony();
         RouterTestimony::getTestimonials();
-        
-        
+        RouterCustomResolution::addCustomResolutionUser();
+        RouterCustomResolution::addCustomResolutionUser();
+        RouterCustomResolution::getCustomUserResolutions();
+        RouterCustomResolution::getUserCustomArchivedResolutions();
+        RouterCustomResolution::delCustomResolutionUser();
+        RouterCustomResolution::editCustomResolutionUser();
     }
 }
