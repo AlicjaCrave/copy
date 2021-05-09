@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'database_name_here' );
+define( 'DB_NAME', 'database_name' );
 
 /** MySQL database username */
-define( 'DB_USER', 'username_here' );
+define( 'DB_USER', 'user_name' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'password_here' );
+define( 'DB_PASSWORD', 'password' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -86,7 +86,7 @@ define( 'WP_DEBUG', false );
 // Je définis l'URL vers la page d'accueil de mon site
 define(
     'WP_HOME',
-    rtrim ( 'put_your_home_url_here', '/' )
+    rtrim ( 'url_of__your__site', '/' )
 );
 
 // Je définis l'URL vers le dossier source de WordPress

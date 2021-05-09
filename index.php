@@ -11,7 +11,7 @@
  *
  * @var bool
  */
-define( 'WP_USE_THEMES', false );
+define( 'WP_USE_THEMES', true );
 
 /** Loads the WordPress Environment and Template */
 // on modifie ce chemin pour désigner le fichier wp-blog-header téléchargé via Composer
